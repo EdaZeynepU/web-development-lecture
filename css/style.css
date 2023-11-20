@@ -1,0 +1,267 @@
+:root{
+    --primary-color-dark:rgb(26, 109, 26);
+    --primary-color:rgb(34, 138, 34);
+    --primary-color-opacity:rgba(99, 146, 99, 0.2);
+    --primary-color-light:rgb(206, 228, 206);
+
+    --secondary-color-dark: rgb(107, 100, 68);
+    --secondary-color: rgb(175, 168, 135);
+    --secondary-color-opacity: rgba(215, 208, 172, 0.2); 
+    --secondary-color-light: rgba(244, 242, 233, 0.8); 
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+nav{
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 25px;
+    background-color: var(--primary-color-light);
+}
+
+nav > *{
+    align-self: center;
+}
+
+
+#logo-nav{
+    width: 80px;
+    height: auto;
+}
+#company-name{
+    font-size: 2rem;
+    color: var(--primary-color-dark);
+}
+#quote{
+    width: 450px;
+    text-align: center;
+}
+#copy-right{
+    text-align: center;
+}
+
+.icon-lg{
+    width: 50px;
+}
+
+#stock-market,#user-panel{
+    display: flex;
+    position: sticky;
+    top: 120px;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px 30px;
+    width: fit-content;
+    height: 500px;
+    background-color: var(--secondary-color-opacity);
+    border-radius: 10px;
+}
+
+#user-panel #profile-pic{
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 100%;
+
+}
+#user-panel #profile-info{
+    /* background: #000; */
+    align-self: center;
+    line-height: 1.8rem;
+    padding-left: 15px;
+}
+#user-panel #profile-info hr{
+    background: var(--secondary-color);
+    border: none;
+    height: 1px;
+}
+
+.user-panel-element{
+    display: flex;
+    padding: 15px;
+    width: 100%;
+    max-width: 450px;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.user-panel-element:first-child{
+    border-top: 1px solid var(--secondary-color) ;
+    width: max-content;
+}
+
+.user-panel-element:nth-child(2){
+    justify-content: space-around;
+}
+.user-panel-element:nth-child(2) p{
+    align-self: center;
+}
+
+.user-panel-element:nth-child(3){
+    text-align: center;
+    flex-direction: column;
+}
+.user-panel-element:nth-child(3) ul{
+    list-style: square;
+    padding: 15px 0px;
+    line-height: 1.8rem;
+    align-self: center;
+    text-align: left;
+}
+
+.stock-market-element{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    width: 25vw;
+    min-width: 290px;
+    max-width: 350px;
+    background-color: var(--secondary-color-opacity);
+    border-radius: 15px;
+    transition-duration: 400ms;
+    transition-property: all;
+}
+.stock-market-element:hover{
+    background-color: var(--secondary-color);
+}
+.stock-market-element:hover .currency{
+    color: black;
+}
+
+.stock-value{
+    padding-left: 12px;
+    font-size: 1.6rem;
+}
+
+.currency{
+    padding-left: 3px;
+    font-size: .9rem;
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-style: italic;
+}
+
+.current-time{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: .8rem;
+}
+
+.increase-or-decrease{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+section{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    margin-top: 110px;
+    gap: 25px;
+    padding: 15px;
+}
+
+.some-writings h2{
+    text-align: center;
+    padding-top: 20px;
+    color: var(--primary-color);
+    font-style: italic;
+}
+.some-writings h1{
+    color: var(--primary-color-dark);
+    padding-top: 30px;
+    padding-bottom: 5px;
+    text-indent: 12px;
+}
+.some-writings .some-writings p:last-of-type{
+    padding-bottom: 30px;
+}
+
+footer{
+    padding: 40px 0;
+    background-color: var(--primary-color-opacity);
+}
+
+.footer-links{
+    padding: 20px;
+    border: 1px solid gray;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    list-style: none;
+    line-height: 2rem;
+}
+
+.footer-links a:not(.disabled) {
+    text-decoration: none;
+    color: var(--primary-color-dark);
+}
+
+.footer-links a:hover:not(.disabled) {
+    text-decoration: underline;
+}
+
+.disabled{
+    color: gray;
+    cursor: default;
+}
+
+
+.footer-links-wrapper{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+
+@media screen and (max-width: 1100px) {
+    section{
+        margin: 0;
+        padding-top: 130px;
+        flex-direction: column;
+        background-color: var(--secondary-color-opacity);
+    }
+    #stock-market,#user-panel{
+        position: static;
+        margin: auto;
+        align-items: center;
+    }
+    #quote{
+        display: none;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    
+    #stock-market,#user-panel{
+        width: 90%;
+        height: fit-content;
+    }
+    #user-panel > *{
+        width: fit-content;
+        flex-wrap: wrap;
+    }
+
+    #stock-market{
+        gap: 8px;
+    }
+    .stock-market-element{
+        min-width: 0;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .stock-market-element > *{
+        position: static;
+    }
+  }
