@@ -17,11 +17,12 @@ It is a website for a bank which has
 
 **Here are some screenshots of the website:**
 
-![Ekran görüntüsü 2023-11-20 142351](https://github.com/EdaZeynepU/web-development-lecture/assets/72568009/4eca8005-fd20-4ff1-a4d1-2249804e80f7)
-![Ekran görüntüsü 2023-11-20 142422](https://github.com/EdaZeynepU/web-development-lecture/assets/72568009/864d34e1-9d2d-4d77-9e1a-dbc6f007bdb5)
-![Ekran görüntüsü 2023-11-20 142543](https://github.com/EdaZeynepU/web-development-lecture/assets/72568009/7c179460-8f5e-4b86-809b-9ef359bd63c3)
-![Ekran görüntüsü 2023-11-20 142528](https://github.com/EdaZeynepU/web-development-lecture/assets/72568009/101965f2-9607-4c17-909d-5a45799bb5e2)
-![Ekran görüntüsü 2023-11-20 142517](https://github.com/EdaZeynepU/web-development-lecture/assets/72568009/9512d234-0559-413f-bdd2-f0d45d5c8e03)
+
+![Ekran görüntüsü 2023-11-20 142528](https://github.com/EdaZeynepU/web-development-lecture/assets/72568009/3cfa2d86-af4a-4aa6-b3cb-24b18e665e08)
+![Ekran görüntüsü 2023-11-20 142517](https://github.com/EdaZeynepU/web-development-lecture/assets/72568009/3f329d1b-d5e3-4003-847d-a8fb35735c67)
+![Ekran görüntüsü 2023-11-20 142422](https://github.com/EdaZeynepU/web-development-lecture/assets/72568009/964f325f-b6d2-4ef6-9847-42ecab139fb3)
+![Ekran görüntüsü 2023-11-20 142351](https://github.com/EdaZeynepU/web-development-lecture/assets/72568009/5126d269-8a4c-4dd9-8c3f-7c1493a1663d)
+![Ekran görüntüsü 2023-11-20 142543](https://github.com/EdaZeynepU/web-development-lecture/assets/72568009/2e624779-1c12-4a7a-a5df-368e00bb1b56)
 
 
 # To run this project locally, follow these steps:
